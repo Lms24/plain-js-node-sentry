@@ -10,10 +10,4 @@ Sentry.init({
 
   // Set sampling rate for profiling - this is relative to tracesSampleRate
   profilesSampleRate: 1.0,
-
-  beforeSend(event) {
-    console.log("Event captured", event);
-    // Modify the event here
-    return event;
-  },
 });
